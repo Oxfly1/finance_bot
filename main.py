@@ -126,7 +126,7 @@ async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Запуск бота
 if __name__ == "__main__":
-    app = ApplicationBuilder().token("7666434957:AAEgaPOEgv_l0uCRagONP0b4Uqz9d5Z86xs").build()
+    app = ApplicationBuilder().token("TELEGRAM_TOKEN").build()
 
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler("start", start)],
